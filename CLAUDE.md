@@ -64,13 +64,12 @@ SEO: meta description, canonical, Open Graph/Twitter tags, and ProfessionalServi
 - **Customers:** not niche — any size, any industry
 - **Primary CTA:** free 30-minute workflow review (owner-approved offer) — used in nav, hero, examples card, process step 1, FAQ, and contact panel
 - **Timeline claim:** working demo in ~2 weeks for most projects; full build depends on scope. No pricing on site (quoted per project)
-- **Email:** info@c7intelligence.io  ← NOTE: mailbox may not exist yet; verify/update once mail is set up for this domain
+- **Email:** info@c7intelligence.io (mailbox confirmed working by owner, 2026-09-24)
 - Service credibility draws on real experience: Azure AI Foundry, Azure AI Search, SharePoint indexing, embeddings/RAG builds, RPA (Playwright), infrastructure background
 - Tone rules: anti-hype, concrete, honest ("we'll tell you honestly why it won't work"). Avoid buzzword salads and inflated AI claims.
 
 ## Known Issues / TODO
 
-- Verify `info@c7intelligence.io` mailbox exists before launch.
 - No case studies yet — a case-study section can be added once shippable references exist (mirror the Infrastructure site's pattern if desired, restyled to this design).
 - No imagery/video — terminal card serves as the hero visual. Real product screenshots could be added later.
 - Consider a DBA-specific shield color variant if per-brand marks are created.
