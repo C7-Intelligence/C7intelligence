@@ -45,7 +45,7 @@ assets/
 ## Page Sections (in order)
 
 1. Header/nav (sticky, blurred) — shield + "C7 Intelligence", links, Start a Project button; below 960px a `<details>` hamburger menu (links close it via a one-line inline onclick)
-2. Hero — "AI that actually ships." + plain-English lead (any size/industry, demo in ~2 weeks) + fact row + animated "assistant" card: owner asks "What needs my attention today?" and gets a plain-English morning summary (QuickBooks invoices, AR reminders, CRM leads, flagged bills, hours saved). CSS-only animation; reduced-motion shows the final state
+2. Hero — headline "Your team's busywork, handled." ("AI that actually ships" kept as the pill tagline) + plain-English lead (any size/industry, demo in ~2 weeks) + fact row + animated "assistant" card: owner asks "What needs my attention today?" and gets a plain-English morning summary (QuickBooks invoices, AR reminders, CRM leads, flagged bills, and a before/after panel: "2 days of data entry" → "Done by 7am"). CSS-only animation; reduced-motion shows the final state
 3. Trust strip — 4 items: demo in ~2 weeks, security (Cyber7 Group), works with your tools, Charlotte & nationwide
 4. What We've Built (`#examples`) — 5 real project types (AP automation, AR automation, QuickBooks integrations, dashboards & reporting, CRM build-outs) + dark "Something else entirely?" card
 5. Services (`#services`) — 6 cards, each with icon, plain-English description, a "For example:" box, and tech tag pills
@@ -62,6 +62,7 @@ SEO: meta description, canonical, Open Graph/Twitter tags, and ProfessionalServi
 - **Phone:** 502-473-5020
 - **Service area:** Core client base in the Charlotte area; clients nationwide (work is largely remote)
 - **Customers:** not niche — any size, any industry
+- **Primary CTA:** free 30-minute workflow review (owner-approved offer) — used in nav, hero, examples card, process step 1, FAQ, and contact panel
 - **Timeline claim:** working demo in ~2 weeks for most projects; full build depends on scope. No pricing on site (quoted per project)
 - **Email:** info@c7intelligence.io  ← NOTE: mailbox may not exist yet; verify/update once mail is set up for this domain
 - Service credibility draws on real experience: Azure AI Foundry, Azure AI Search, SharePoint indexing, embeddings/RAG builds, RPA (Playwright), infrastructure background
