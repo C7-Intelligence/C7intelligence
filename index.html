@@ -3,11 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>C7 Intelligence — AI Integration & Custom Software</title>
+<title>C7 Intelligence — AI Automation, Integrations & Custom Software</title>
+<meta name="description" content="C7 Intelligence builds AI automation, QuickBooks and system integrations, dashboards, CRMs, and custom software for businesses of every size. Charlotte-area and nationwide. Start with a free 30-minute workflow review.">
+<link rel="canonical" href="https://c7intelligence.io/">
+<meta name="theme-color" content="#faf9f6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="C7 Intelligence">
+<meta property="og:title" content="C7 Intelligence — Your team's busywork, handled.">
+<meta property="og:description" content="AI automation, integrations, dashboards, and custom software. Start with a free 30-minute workflow review.">
+<meta property="og:url" content="https://c7intelligence.io/">
+<meta property="og:image" content="https://c7intelligence.io/assets/c7-shield.png">
+<meta name="twitter:card" content="summary">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"C7 Intelligence",
+  "url":"https://c7intelligence.io/",
+  "logo":"https://c7intelligence.io/assets/c7-shield.png",
+  "description":"AI automation, system integrations, dashboards, CRM build-outs, and custom software development.",
+  "telephone":"+1-502-473-5020",
+  "email":"info@c7intelligence.io",
+  "areaServed":[{"@type":"City","name":"Charlotte"},{"@type":"Country","name":"United States"}],
+  "parentOrganization":{"@type":"Organization","name":"Cyber7 Group LLC","url":"https://cyber7group.com"}
+}
+</script>
 <style>
   :root{
     --paper:#faf9f6;
@@ -17,46 +41,50 @@
     --violet:#6d28d9;
     --violet-bright:#8b5cf6;
     --magenta:#d946ef;
+    --violet-tint:#f3eefe;
     --text:#26232f;
-    --muted:#6b6579;
+    --muted:#5f596d;
     --line:rgba(25,23,34,0.12);
     --line-dk:rgba(255,255,255,0.12);
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;scroll-padding-top:84px;}
   body{
     margin:0;background:var(--paper);color:var(--text);
     font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
   }
   h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-0.01em;}
-  .mono{font-family:'Fira Code',monospace;}
   a{color:inherit;}
   img{max-width:100%;display:block;}
+  :focus-visible{outline:2px solid var(--violet);outline-offset:3px;border-radius:6px;}
   .wrap{max-width:1160px;margin:0 auto;padding:0 30px;}
-  @media (max-width:640px){.wrap{padding:0 20px;}}
+  @media (max-width:640px){.wrap{padding:0 16px;}}
   .grad{
     background:linear-gradient(94deg,var(--violet) 0%,var(--magenta) 100%);
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
+  .ico{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
   /* nav */
   header{
-    background:rgba(250,249,246,0.85);backdrop-filter:blur(12px);
+    background:rgba(250,249,246,0.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line);
     position:sticky;top:0;z-index:50;
   }
-  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:72px;}
-  .logo{display:flex;align-items:center;gap:11px;font-family:'Manrope',sans-serif;font-weight:800;font-size:18px;color:var(--carbon);}
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;}
+  .logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:18px;color:var(--carbon);text-decoration:none;white-space:nowrap;}
   .logo img{width:30px;height:auto;}
-  .navlinks{display:flex;gap:32px;font-size:14.5px;font-weight:500;color:var(--muted);}
+  .navlinks{display:flex;gap:30px;font-size:14.5px;font-weight:500;color:var(--muted);}
   .navlinks a{text-decoration:none;transition:color .15s;}
   .navlinks a:hover{color:var(--carbon);}
+  .nav-cta{padding:11px 22px !important;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
     padding:13px 26px;border-radius:100px;
     font-size:14.5px;font-weight:700;text-decoration:none;
     font-family:'Manrope',sans-serif;
-    transition:transform .15s, box-shadow .15s, background .15s;
+    transition:transform .15s, box-shadow .15s, background .15s, border-color .15s;
     border:1px solid transparent;
   }
   .btn:hover{transform:translateY(-1px);}
@@ -64,19 +92,40 @@
   .btn-dark:hover{box-shadow:0 10px 26px rgba(25,23,34,0.25);}
   .btn-violet{background:linear-gradient(94deg,var(--violet),var(--magenta));color:#fff;}
   .btn-violet:hover{box-shadow:0 10px 28px rgba(109,40,217,0.35);}
-  .btn-line{border-color:var(--line);color:var(--carbon);}
+  .btn-line{border-color:var(--line);color:var(--carbon);background:#fff;}
   .btn-line:hover{border-color:var(--carbon);}
-  @media (max-width:900px){.navlinks{display:none;}}
+
+  /* mobile menu */
+  .mnav{display:none;position:relative;}
+  .mnav summary{
+    list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--carbon);
+  }
+  .mnav summary::-webkit-details-marker{display:none;}
+  .mnav .close{display:none;}
+  .mnav[open] .open{display:none;}
+  .mnav[open] .close{display:block;}
+  .mnav .panel{
+    position:absolute;right:0;top:54px;width:min(280px,calc(100vw - 32px));
+    background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;
+    box-shadow:0 20px 50px rgba(25,23,34,0.16);
+  }
+  .mnav .panel a{display:block;padding:12px 14px;border-radius:10px;text-decoration:none;font-weight:600;color:var(--carbon);}
+  .mnav .panel a:hover{background:var(--paper-2);}
+  .mnav .panel .btn{display:flex;justify-content:center;margin-top:6px;color:#fff;}
+  @media (max-width:960px){.navlinks{display:none;}}
+  @media (max-width:640px){.nav-cta{display:none !important;}.mnav{display:block;}}
+  @media (min-width:641px) and (max-width:960px){.mnav{display:block;}}
 
   /* hero */
-  .hero{padding:104px 0 96px;position:relative;overflow:hidden;}
+  .hero{padding:96px 0 88px;position:relative;overflow:hidden;}
   .hero::after{
     content:"";position:absolute;top:-220px;right:-180px;width:640px;height:640px;
     background:radial-gradient(circle,rgba(139,92,246,0.16),rgba(217,70,239,0.07) 55%,transparent 72%);
     border-radius:50%;pointer-events:none;
   }
   .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center;}
-  @media (max-width:960px){.hero .wrap{grid-template-columns:1fr;}}
+  @media (max-width:960px){.hero .wrap{grid-template-columns:1fr;gap:48px;}.hero{padding:64px 0 72px;}}
   .pill{
     display:inline-flex;align-items:center;gap:8px;
     font-family:'Fira Code',monospace;font-size:12px;
@@ -85,11 +134,15 @@
   }
   .pill::before{content:"";width:7px;height:7px;border-radius:50%;background:linear-gradient(94deg,var(--violet),var(--magenta));}
   .hero h1{
-    font-size:clamp(38px,5vw,62px);line-height:1.04;
+    font-size:clamp(40px,5vw,64px);line-height:1.04;
     margin:0 0 24px;color:var(--carbon);font-weight:600;
   }
-  .hero p.lead{font-size:18px;line-height:1.65;color:var(--muted);max-width:500px;margin:0 0 36px;}
+  .hero p.lead{font-size:18px;line-height:1.65;color:var(--muted);max-width:520px;margin:0 0 32px;}
+  .hero p.lead strong{color:var(--text);font-weight:700;}
   .btnrow{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);}
+  .hero-facts span{display:inline-flex;align-items:center;gap:8px;}
+  .hero-facts .ico{width:18px;height:18px;color:var(--violet);}
 
   /* terminal card */
   .term{
@@ -103,22 +156,93 @@
   }
   .term .bar span{width:11px;height:11px;border-radius:50%;background:#3d3a4a;}
   .term .bar .t{margin-left:8px;color:#8d87a0;font-size:11.5px;}
-  .term .body{padding:22px 22px 26px;line-height:1.85;color:#c9c4d6;}
-  .term .c{color:#6b6579;}
-  .term .v{color:#8b5cf6;}
-  .term .m{color:#d946ef;}
-  .term .g{color:#4ade80;}
+  .term .bar .live{margin-left:auto;display:flex;align-items:center;gap:6px;color:#4ade80;font-size:11px;}
+  .term .bar .live::before{content:"";width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 3px rgba(74,222,128,0.18);}
+  .term .body{padding:22px 22px 24px;line-height:1.7;color:#c9c4d6;}
+  .term .c{color:#7d778f;}
+  .term .v{color:#a78bfa;}
+  .term .ask{display:flex;gap:10px;align-items:baseline;margin-bottom:18px;}
+  .term .who{color:#7d778f;flex-shrink:0;}
+  .term .typed{
+    display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;color:#fff;
+    width:0;animation:type 1.5s steps(30) .5s forwards;
+  }
+  @keyframes type{to{width:30ch;}}
+  .term .reply{border-left:2px solid transparent;padding-left:14px;animation:rule .4s ease 2.2s forwards;}
+  @keyframes rule{to{border-left-color:rgba(139,92,246,0.45);}}
+  .term .ln{display:grid;grid-template-columns:18px 1fr;gap:8px;margin-bottom:7px;opacity:0;transform:translateY(4px);animation:rise .45s ease forwards;animation-delay:var(--d);}
+  @keyframes rise{to{opacity:1;transform:none;}}
+  .term .ok{color:#4ade80;}
+  .term .warn{color:#fbbf24;}
+  .term .ln b{color:#fff;font-weight:500;}
+  .term .ba{
+    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;
+    margin:16px 0 14px;padding:13px 16px;border-radius:10px;line-height:1.35;
+    background:linear-gradient(94deg,rgba(109,40,217,0.28),rgba(217,70,239,0.18));border:1px solid rgba(167,139,250,0.3);
+  }
+  .term .ba span{display:block;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#9d97ae;margin-bottom:3px;}
+  .term .ba b{display:block;font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:#fff;white-space:nowrap;}
+  .term .ba b.old{color:#9d97ae;text-decoration:line-through;text-decoration-color:rgba(251,191,36,0.7);text-decoration-thickness:2px;}
+  .term .ba i{display:block;font-style:normal;font-size:11px;color:#9d97ae;margin-top:2px;}
+  .term .ba .arw{color:#e879f9;font-size:18px;}
+  .term .next{color:#a78bfa;}
   .cursor{display:inline-block;width:8px;height:15px;background:#8b5cf6;vertical-align:middle;animation:blink 1.1s steps(1) infinite;}
   @keyframes blink{50%{opacity:0;}}
+  @media (max-width:640px){.term{font-size:11.5px;}.term .body{padding:18px 16px 20px;}.term .ba{gap:8px;padding:12px;}.term .ba b{font-size:17px;}}
+
+  /* trust strip */
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);}
+  .trust-item{display:flex;gap:14px;align-items:flex-start;padding:28px 24px;border-left:1px solid var(--line);}
+  .trust-item:first-child{border-left:0;padding-left:0;}
+  .trust-item .ico{color:var(--violet);margin-top:2px;}
+  .trust-item b{display:block;font-size:15px;color:var(--carbon);margin-bottom:4px;}
+  .trust-item span{font-size:13.5px;color:var(--muted);line-height:1.55;}
+  @media (max-width:960px){
+    .trust .wrap{grid-template-columns:1fr 1fr;}
+    .trust-item{padding:22px 18px;}
+    .trust-item:nth-child(odd){border-left:0;padding-left:0;}
+    .trust-item:nth-child(n+3){border-top:1px solid var(--line);}
+  }
+  @media (max-width:560px){
+    .trust .wrap{grid-template-columns:1fr;}
+    .trust-item{border-left:0 !important;padding:20px 0;}
+    .trust-item:nth-child(n+2){border-top:1px solid var(--line);}
+  }
 
   section{padding:96px 0;}
-  .sec-head{max-width:620px;margin-bottom:54px;}
-  .sec-head .lbl{
+  @media (max-width:640px){section{padding:72px 0;}}
+  .sec-head{max-width:660px;margin-bottom:50px;}
+  .lbl{
     font-family:'Fira Code',monospace;font-size:12px;letter-spacing:0.1em;
     text-transform:uppercase;color:var(--violet);display:block;margin-bottom:16px;
   }
-  .sec-head h2{font-size:clamp(30px,3.6vw,44px);margin:0 0 16px;color:var(--carbon);}
-  .sec-head p{font-size:16.5px;color:var(--muted);line-height:1.65;margin:0;}
+  .sec-head h2{font-size:clamp(30px,3.6vw,44px);line-height:1.12;margin:0 0 16px;color:var(--carbon);}
+  .sec-head p{font-size:17px;color:var(--muted);line-height:1.65;margin:0;}
+
+  /* examples */
+  .ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media (max-width:960px){.ex-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:640px){.ex-grid{grid-template-columns:1fr;}}
+  .ex{
+    background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 28px;
+    display:flex;flex-direction:column;transition:box-shadow .2s, transform .2s;
+  }
+  .ex:hover{box-shadow:0 18px 44px rgba(25,23,34,0.10);transform:translateY(-2px);}
+  .ex .ic{
+    width:46px;height:46px;border-radius:12px;display:grid;place-items:center;
+    background:var(--violet-tint);color:var(--violet);margin-bottom:20px;
+  }
+  .ex h3{font-size:20px;margin:0 0 10px;color:var(--carbon);}
+  .ex p{font-size:15px;color:var(--muted);line-height:1.7;margin:0 0 18px;}
+  .ex ul{list-style:none;margin:auto 0 0;padding:16px 0 0;border-top:1px dashed var(--line);font-size:14px;color:var(--text);}
+  .ex li{position:relative;padding-left:22px;margin-bottom:8px;line-height:1.5;}
+  .ex li::before{content:"";position:absolute;left:2px;top:7px;width:8px;height:8px;border-radius:50%;background:linear-gradient(94deg,var(--violet),var(--magenta));}
+  .ex.open{background:var(--carbon);border-color:var(--carbon);color:#eceaf2;}
+  .ex.open .ic{background:rgba(139,92,246,0.18);color:#c4b5fd;}
+  .ex.open h3{color:#fff;}
+  .ex.open p{color:#b9b3c8;}
+  .ex.open a{margin-top:auto;align-self:flex-start;}
 
   /* services */
   .svc{background:var(--paper-2);}
@@ -126,16 +250,20 @@
   @media (max-width:820px){.svc-grid{grid-template-columns:1fr;}}
   .svc-card{
     background:#fff;border:1px solid var(--line);border-radius:16px;
-    padding:36px 32px;transition:box-shadow .2s, transform .2s;
+    padding:34px 32px;transition:box-shadow .2s, transform .2s;
   }
   .svc-card:hover{box-shadow:0 18px 44px rgba(25,23,34,0.10);transform:translateY(-2px);}
-  .svc-card .num{
-    font-family:'Fraunces',serif;font-size:15px;font-style:italic;
-    color:var(--magenta);display:block;margin-bottom:14px;
-  }
+  .svc-card .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+  .svc-card .top .ico{color:var(--violet);width:26px;height:26px;}
+  .svc-card .num{font-family:'Fraunces',serif;font-size:15px;font-style:italic;color:var(--magenta);}
   .svc-card h3{font-size:21px;margin:0 0 10px;color:var(--carbon);}
   .svc-card p{font-size:15px;color:var(--muted);line-height:1.7;margin:0;}
-  .svc-card .tags{margin-top:20px;display:flex;flex-wrap:wrap;gap:7px;}
+  .svc-card .eg{
+    margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--paper);
+    font-size:14px;line-height:1.6;color:var(--text);border-left:3px solid var(--violet-bright);
+  }
+  .svc-card .eg b{font-weight:700;color:var(--violet);}
+  .svc-card .tags{margin-top:18px;display:flex;flex-wrap:wrap;gap:7px;}
   .svc-card .tags span{
     font-family:'Fira Code',monospace;font-size:11px;
     background:var(--paper);border:1px solid var(--line);
@@ -150,94 +278,221 @@
     border-radius:50%;
   }
   .belief .wrap{position:relative;max-width:900px;}
-  .belief .lbl{font-family:'Fira Code',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--violet-bright);display:block;margin-bottom:24px;}
+  .belief .lbl{color:var(--violet-bright);margin-bottom:24px;}
   .belief h2{
-    font-family:'Fraunces',serif;font-weight:500;
-    font-size:clamp(26px,3.6vw,42px);line-height:1.3;color:#fff;margin:0;
+    font-weight:500;font-size:clamp(26px,3.6vw,42px);line-height:1.3;color:#fff;margin:0;
   }
-  .belief h2 em{font-style:italic;color:var(--violet-bright);}
+  .belief h2 em{font-style:italic;color:#a78bfa;}
+  .belief p{margin:28px 0 0;font-size:17px;line-height:1.7;color:#b9b3c8;max-width:680px;}
 
   /* process */
-  .proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  @media (max-width:880px){.proc-grid{grid-template-columns:1fr;}}
-  .proc{
-    border:1px solid var(--line);border-radius:16px;padding:32px 28px;background:#fff;
-  }
+  .proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  @media (max-width:1000px){.proc-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.proc-grid{grid-template-columns:1fr;}}
+  .proc{border:1px solid var(--line);border-radius:16px;padding:30px 26px;background:#fff;display:flex;flex-direction:column;}
   .proc .ph{
     font-family:'Fira Code',monospace;font-size:11.5px;color:var(--magenta);
-    letter-spacing:0.08em;display:block;margin-bottom:16px;
+    letter-spacing:0.08em;display:block;margin-bottom:14px;
   }
-  .proc h3{font-size:19px;margin:0 0 10px;color:var(--carbon);}
-  .proc p{font-size:14.5px;color:var(--muted);line-height:1.7;margin:0;}
+  .proc h3{font-size:19px;margin:0 0 6px;color:var(--carbon);}
+  .proc .when{display:inline-block;font-size:12.5px;font-weight:700;color:var(--violet);background:var(--violet-tint);border-radius:100px;padding:4px 11px;margin-bottom:14px;align-self:flex-start;}
+  .proc p{font-size:14.5px;color:var(--muted);line-height:1.7;margin:0 0 16px;}
+  .proc .get{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);font-size:13.5px;line-height:1.55;color:var(--text);}
+  .proc .get b{display:block;font-family:'Fira Code',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8d87a0;margin-bottom:4px;font-weight:500;}
+
+  /* faq */
+  .faq{background:var(--paper-2);}
+  .faq .wrap{display:grid;grid-template-columns:0.8fr 1.2fr;gap:64px;align-items:start;}
+  @media (max-width:900px){.faq .wrap{grid-template-columns:1fr;gap:10px;}}
+  .faq .sec-head{margin-bottom:0;position:sticky;top:110px;}
+  @media (max-width:900px){.faq .sec-head{position:static;margin-bottom:30px;}}
+  .qa{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;}
+  .qa summary{
+    list-style:none;cursor:pointer;padding:20px 22px;font-weight:700;font-size:16px;color:var(--carbon);
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  .qa summary::-webkit-details-marker{display:none;}
+  .qa summary::after{
+    content:"+";font-family:'Fira Code',monospace;font-weight:400;font-size:20px;color:var(--violet);
+    transition:transform .2s;flex-shrink:0;
+  }
+  .qa[open] summary::after{transform:rotate(45deg);}
+  .qa p{margin:0;padding:0 22px 22px;font-size:15px;line-height:1.7;color:var(--muted);}
 
   /* cta */
   .cta{padding:110px 0;}
+  @media (max-width:640px){.cta{padding:72px 0;}}
   .cta .inner{
     background:linear-gradient(120deg,var(--violet) 0%,var(--magenta) 100%);
-    border-radius:24px;padding:74px 60px;color:#fff;
+    border-radius:24px;padding:70px 60px;color:#fff;
     display:grid;grid-template-columns:1.3fr 0.7fr;gap:40px;align-items:center;
     position:relative;overflow:hidden;
   }
-  @media (max-width:860px){.cta .inner{grid-template-columns:1fr;padding:50px 34px;}}
-  .cta h2{font-size:clamp(28px,3.8vw,44px);margin:0 0 14px;color:#fff;font-weight:600;}
-  .cta p{font-size:16.5px;color:rgba(255,255,255,0.85);line-height:1.6;margin:0;}
-  .cta .actions{display:flex;flex-direction:column;gap:14px;}
+  .cta .inner::after{
+    content:"";position:absolute;top:-160px;right:-120px;width:420px;height:420px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,255,255,0.18),transparent 70%);pointer-events:none;
+  }
+  @media (max-width:860px){.cta .inner{grid-template-columns:1fr;padding:44px 26px;}}
+  .cta h2{font-size:clamp(28px,3.8vw,44px);line-height:1.12;margin:0 0 14px;color:#fff;font-weight:600;}
+  .cta p{font-size:17px;color:rgba(255,255,255,0.9);line-height:1.6;margin:0;}
+  .cta .note{margin-top:18px;font-size:14px;color:rgba(255,255,255,0.85);display:flex;align-items:center;gap:8px;}
+  .cta .note .ico{width:18px;height:18px;}
+  .cta .actions{display:flex;flex-direction:column;gap:14px;position:relative;z-index:1;}
   .cta .actions .btn{justify-content:center;}
   .btn-white{background:#fff;color:var(--violet);}
   .btn-white:hover{box-shadow:0 12px 30px rgba(0,0,0,0.22);}
-  .btn-ghostw{border-color:rgba(255,255,255,0.4);color:#fff;}
+  .btn-ghostw{border-color:rgba(255,255,255,0.5);color:#fff;}
   .btn-ghostw:hover{border-color:#fff;}
 
-  footer{border-top:1px solid var(--line);padding:46px 0;color:var(--muted);background:var(--paper);}
-  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px;font-size:13.5px;}
-  footer .fbrand{font-family:'Manrope',sans-serif;font-weight:800;font-size:16px;color:var(--carbon);margin-bottom:8px;}
-  footer .fcol h4{font-family:'Fira Code',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:0.12em;color:#a49eb2;margin:0 0 14px;}
+  footer{border-top:1px solid var(--line);padding:50px 0;color:var(--muted);background:var(--paper);}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;font-size:13.5px;}
+  footer .fbrand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px;color:var(--carbon);margin-bottom:10px;}
+  footer .fbrand img{width:24px;}
+  footer .fcol h4{font-family:'Fira Code',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:0.12em;color:#8d87a0;margin:0 0 14px;font-weight:500;}
   footer .fcol a{display:block;color:var(--muted);text-decoration:none;margin-bottom:9px;}
   footer .fcol a:hover{color:var(--carbon);}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important;animation:none !important;}
+    .term .ln{opacity:1;transform:none;}
+    .term .typed{width:auto;}
+    .term .reply{border-left-color:rgba(139,92,246,0.45);}
+  }
 </style>
 </head>
 <body>
 
   <header>
-    <nav class="wrap">
-      <div class="logo">
-        <img src="assets/c7-shield.png" alt="Cyber7 Group shield">
+    <nav class="wrap" aria-label="Main">
+      <a class="logo" href="#top">
+        <img src="assets/c7-shield.png" alt="">
         C7 Intelligence
-      </div>
+      </a>
       <div class="navlinks">
-        <a href="#services">What We Build</a>
-        <a href="#philosophy">Philosophy</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
+        <a href="#examples">What We've Built</a>
+        <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
+        <a href="#faq">FAQ</a>
       </div>
-      <a class="btn btn-dark" href="#contact" style="padding:11px 22px;">Start a Project</a>
+      <a class="btn btn-dark nav-cta" href="#contact">Get a Free Review</a>
+      <details class="mnav">
+        <summary aria-label="Menu">
+          <svg class="ico open" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="ico close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </summary>
+        <div class="panel">
+          <a href="#examples" onclick="this.closest('details').open=false">What We've Built</a>
+          <a href="#services" onclick="this.closest('details').open=false">Services</a>
+          <a href="#process" onclick="this.closest('details').open=false">How It Works</a>
+          <a href="#faq" onclick="this.closest('details').open=false">FAQ</a>
+          <a href="#contact" class="btn btn-violet" onclick="this.closest('details').open=false">Get a Free Review</a>
+        </div>
+      </details>
     </nav>
   </header>
 
+  <main id="top">
   <section class="hero">
     <div class="wrap">
       <div>
-        <div class="pill">AI integration &amp; custom software</div>
-        <h1>AI that actually <span class="grad">ships.</span></h1>
-        <p class="lead">C7 Intelligence builds AI systems and custom software that make it into production — retrieval systems over your real data, automation of your real workflows, software shaped to your actual business.</p>
+        <div class="pill">AI that actually ships</div>
+        <h1>Your team's busywork, <span class="grad">handled.</span></h1>
+        <p class="lead">Invoices, data entry, follow-ups, reports. We build AI automations and custom software that take the repetitive work off your team's plate, <strong>for businesses of any size, in any industry.</strong> Start with a free 30-minute workflow review, and see a working demo in about two weeks.</p>
         <div class="btnrow">
-          <a href="#contact" class="btn btn-violet">Start a Project</a>
-          <a href="#services" class="btn btn-line">What we build</a>
+          <a href="#contact" class="btn btn-violet">Get a free workflow review</a>
+          <a href="#examples" class="btn btn-line">See what we've built</a>
+        </div>
+        <div class="hero-facts">
+          <span><svg class="ico" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free 30-min review</span>
+          <span><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Demo in ~2 weeks</span>
+          <span><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Charlotte &amp; nationwide</span>
+          
         </div>
       </div>
-      <div class="term">
-        <div class="bar"><span></span><span></span><span></span><div class="t">c7 — assistant.query</div></div>
-        <div class="body">
-<span class="c"># Ask across every system you run</span><br>
-<span class="v">&gt;</span> query(<span class="g">"open tickets mentioning the Riverside migration"</span>)<br>
-<br>
-<span class="m">→ searching:</span> ticketing · documentation · knowledge base<br>
-<span class="m">→ grounded:</span> 14 sources retrieved<br>
-<br>
-<span class="c"># Answer, with citations back to your own data</span><br>
-<span class="v">&gt;</span> 3 open tickets found. Cutover is blocked on<br>
-&nbsp;&nbsp;firewall change #4482 — approved, not yet applied.<br>
-&nbsp;&nbsp;<span class="g">[TICKET-7719] [KB-204] [CHG-4482]</span> <span class="cursor"></span>
+      <div class="term" role="img" aria-label="Example: a business owner asks what needs their attention today. The assistant reports 35 invoices entered in QuickBooks overnight, 12 payment reminders sent with $18,400 collected, 2 new leads followed up in the CRM, and 3 bills flagged for review. Work that used to take 2 days of data entry each week is now done by 7am.">
+        <div class="bar"><span></span><span></span><span></span><div class="t">c7 assistant · example</div><div class="live">live</div></div>
+        <div class="body" aria-hidden="true">
+          <div class="ask"><span class="who">you ›</span><span class="typed">What needs my attention today?</span></div>
+          <div class="reply">
+            <div class="ln" style="--d:2.3s"><span class="ok">✓</span><span><b>35 invoices</b> entered in QuickBooks overnight</span></div>
+            <div class="ln" style="--d:2.8s"><span class="ok">✓</span><span><b>12 payment reminders</b> sent · $18,400 collected</span></div>
+            <div class="ln" style="--d:3.3s"><span class="ok">✓</span><span><b>2 new leads</b> added to the CRM and followed up</span></div>
+            <div class="ln" style="--d:3.8s"><span class="warn">!</span><span><b>3 bills</b> need a look: amounts don't match the PO</span></div>
+            <div class="ln" style="--d:4.4s;display:block;margin:0;">
+              <div class="ba"><div><span>Before</span><b class="old">2 days</b><i>of data entry, every week</i></div><div class="arw">→</div><div><span>Now</span><b>Done by 7am</b><i>checked, posted, filed</i></div></div>
+            </div>
+            <div class="ln" style="--d:5s;display:block;margin:0;"><span class="next">Want me to pull up those 3 bills?</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item">
+        <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M10 14l2-2 2 2 3-3"/></svg>
+        <div><b>See it before you commit</b><span>A working demo in about two weeks for most projects.</span></div>
+      </div>
+      <div class="trust-item">
+        <svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"/></svg>
+        <div><b>Security built in</b><span>Part of Cyber7 Group, alongside our managed IT and cybersecurity teams.</span></div>
+      </div>
+      <div class="trust-item">
+        <svg class="ico" viewBox="0 0 24 24"><path d="M9 7H6a3 3 0 0 0 0 6h3M15 7h3a3 3 0 0 1 0 6h-3M8 10h8"/></svg>
+        <div><b>Works with your tools</b><span>QuickBooks, Microsoft 365, your CRM, and the systems you already run.</span></div>
+      </div>
+      <div class="trust-item">
+        <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        <div><b>Charlotte &amp; nationwide</b><span>Clients across the country, with a core base in the Charlotte area.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="examples">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="lbl">// what we've built</span>
+        <h2>Real work, running for real businesses.</h2>
+        <p>A few of the systems we've built for clients. If your team does something repetitive, rules-based, or stuck in a spreadsheet, there's a good chance we can automate it.</p>
+      </div>
+      <div class="ex-grid">
+        <div class="ex">
+          <div class="ic"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></div>
+          <h3>Accounts payable automation</h3>
+          <p>Invoices arrive by email, PDF, or scan. The system reads them, matches each one to the right vendor and account, and enters the bill, so your AP work runs itself.</p>
+          <ul><li>Invoice capture and data entry</li><li>Matching to vendors, POs, and GL codes</li><li>Only the exceptions go to a person</li></ul>
+        </div>
+        <div class="ex">
+          <div class="ic"><svg class="ico" viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg></div>
+          <h3>Accounts receivable automation</h3>
+          <p>Invoicing, payment matching, and follow-up on overdue balances, handled automatically and on schedule, so cash comes in without someone chasing it by hand.</p>
+          <ul><li>Invoices generated and sent on time</li><li>Payments matched and applied</li><li>Polite, automatic reminders</li></ul>
+        </div>
+        <div class="ex">
+          <div class="ic"><svg class="ico" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></div>
+          <h3>QuickBooks integrations</h3>
+          <p>Connect QuickBooks to the rest of your business so data flows both ways, with no more copying numbers between systems or re-keying the same entry twice.</p>
+          <ul><li>Sync with your CRM, billing, or ops tools</li><li>Automatic entries and reconciliation</li><li>Clean data your accountant will like</li></ul>
+        </div>
+        <div class="ex">
+          <div class="ic"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 16v-4M12 16V8M17 16v-6"/></svg></div>
+          <h3>Dashboards &amp; reporting</h3>
+          <p>One screen showing the numbers that matter, pulled live from your accounting, sales, and operations systems, in place of a weekly scramble to build reports.</p>
+          <ul><li>Live data from the tools you use</li><li>Built around the decisions you make</li><li>Automated reports to your inbox</li></ul>
+        </div>
+        <div class="ex">
+          <div class="ic"><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></div>
+          <h3>CRM build-outs</h3>
+          <p>A CRM set up around how your team actually sells and serves customers, with pipelines, automations, and integrations configured and ready to use.</p>
+          <ul><li>Custom pipelines and fields</li><li>Follow-ups and tasks automated</li><li>Connected to accounting and email</li></ul>
+        </div>
+        <div class="ex open">
+          <div class="ic"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          <h3>Something else entirely?</h3>
+          <p>Most of our projects start with "I don't know if this is possible, but…" Tell us the process. If AI or automation can handle it, we'll show you. If it can't, we'll tell you why.</p>
+          <a href="#contact" class="btn btn-violet">Get a free review</a>
         </div>
       </div>
     </div>
@@ -246,46 +501,52 @@
   <section class="svc" id="services">
     <div class="wrap">
       <div class="sec-head">
-        <span class="lbl">// what we build</span>
+        <span class="lbl">// services</span>
         <h2>From "we should use AI" to running in production.</h2>
-        <p>Most AI projects die between the demo and the deployment. We build the unglamorous parts — data plumbing, retrieval quality, security, integration — that get them across the line.</p>
+        <p>Most AI projects die between the demo and day-to-day use. We handle the unglamorous parts that get them across the line: connecting your systems, cleaning up data, security, and testing.</p>
       </div>
       <div class="svc-grid">
         <div class="svc-card">
-          <span class="num">No. 01</span>
+          <div class="top"><span class="num">No. 01</span><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
           <h3>AI Integration</h3>
-          <p>Language models wired into your actual business systems and workflows — with the guardrails, evaluation, and access controls production demands.</p>
-          <div class="tags"><span>Azure AI Foundry</span><span>OpenAI</span><span>Claude</span><span>Evals</span></div>
+          <p>AI connected to your actual business systems and workflows, with the safeguards, testing, and access controls a real business needs.</p>
+          <div class="eg"><b>For example:</b> an AI step that reads incoming customer emails, pulls out the order details, and creates the order in your system for a person to approve.</div>
+          <div class="tags"><span>Azure AI Foundry</span><span>OpenAI</span><span>Claude</span></div>
         </div>
         <div class="svc-card">
-          <span class="num">No. 02</span>
-          <h3>RAG &amp; Knowledge Systems</h3>
-          <p>Retrieval-augmented systems that answer from your documents, tickets, and tribal knowledge — grounded, cited, and permission-aware.</p>
-          <div class="tags"><span>Azure AI Search</span><span>Embeddings</span><span>SharePoint</span><span>Vector DBs</span></div>
+          <div class="top"><span class="num">No. 02</span><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+          <h3>Company Knowledge Assistants</h3>
+          <p>An assistant that answers questions from your own documents, tickets, and files. Every answer links back to its source, and people only see what they're allowed to see.</p>
+          <div class="eg"><b>For example:</b> staff ask "what's our PTO policy for new hires?" and get the answer with a link to the exact page in your SharePoint.</div>
+          <div class="tags"><span>Azure AI Search</span><span>SharePoint</span><span>Microsoft 365</span></div>
         </div>
         <div class="svc-card">
-          <span class="num">No. 03</span>
-          <h3>Custom Software Development</h3>
-          <p>Purpose-built applications and internal tools when off-the-shelf doesn't fit — designed around your workflow instead of forcing your workflow around software.</p>
-          <div class="tags"><span>Python</span><span>APIs</span><span>Web Apps</span><span>Integrations</span></div>
+          <div class="top"><span class="num">No. 03</span><svg class="ico" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></div>
+          <h3>Custom Software &amp; Dashboards</h3>
+          <p>Purpose-built apps, internal tools, portals, and dashboards when off-the-shelf software doesn't fit. Designed around how you work, so you don't have to work around the software.</p>
+          <div class="eg"><b>For example:</b> a web portal where customers submit requests and track status, connected directly to your back office.</div>
+          <div class="tags"><span>Web Apps</span><span>APIs</span><span>Dashboards</span><span>CRMs</span></div>
         </div>
         <div class="svc-card">
-          <span class="num">No. 04</span>
+          <div class="top"><span class="num">No. 04</span><svg class="ico" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
           <h3>Workflow Automation</h3>
-          <p>Robotic process automation and AI agents that take over repetitive work across the systems you already run — measured in hours given back.</p>
-          <div class="tags"><span>RPA</span><span>Playwright</span><span>Power Automate</span><span>Agents</span></div>
+          <p>Automations and AI agents that take over repetitive, click-by-click work across the systems you already run. We measure success in hours handed back to your team.</p>
+          <div class="eg"><b>For example:</b> logging into a vendor portal every morning, downloading reports, and updating your spreadsheets and accounting system automatically.</div>
+          <div class="tags"><span>QuickBooks</span><span>Power Automate</span><span>RPA</span><span>AI Agents</span></div>
         </div>
         <div class="svc-card">
-          <span class="num">No. 05</span>
-          <h3>AI Readiness &amp; Infrastructure</h3>
-          <p>Data, security, and infrastructure groundwork that determines whether AI initiatives succeed — assessed and built by people who run infrastructure for a living.</p>
-          <div class="tags"><span>Data Pipelines</span><span>Azure</span><span>Governance</span></div>
+          <div class="top"><span class="num">No. 05</span><svg class="ico" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+          <h3>AI Readiness &amp; Security</h3>
+          <p>Getting your data, permissions, and systems ready so AI can use them safely. Assessed and built by people who run IT infrastructure and security for a living.</p>
+          <div class="eg"><b>For example:</b> cleaning up SharePoint permissions before rolling out Microsoft Copilot, so it can't surface files people shouldn't see.</div>
+          <div class="tags"><span>Azure</span><span>Data Cleanup</span><span>Governance</span></div>
         </div>
         <div class="svc-card">
-          <span class="num">No. 06</span>
+          <div class="top"><span class="num">No. 06</span><svg class="ico" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></div>
           <h3>Advisory &amp; Roadmapping</h3>
-          <p>Straight answers about what AI can and can't do for your business today — and a sequenced roadmap that starts with the highest-value, lowest-risk wins.</p>
-          <div class="tags"><span>Use-case Triage</span><span>Pilots</span><span>ROI Framing</span></div>
+          <p>Straight answers about what AI can and can't do for your business today, plus a plan that starts with the highest-value, lowest-risk wins.</p>
+          <div class="eg"><b>For example:</b> a review of your team's weekly workload that ranks which tasks are worth automating first, and roughly what each would save.</div>
+          <div class="tags"><span>Use-case Review</span><span>Pilots</span><span>ROI</span></div>
         </div>
       </div>
     </div>
@@ -293,34 +554,92 @@
 
   <section class="belief" id="philosophy">
     <div class="wrap">
-      <span class="lbl">// philosophy</span>
+      <span class="lbl">// our approach</span>
       <h2>Most companies don't need <em>more AI.</em> They need the AI they adopt to be <em>grounded in their data,</em> <em>secured like production,</em> and <em>boring enough to trust.</em> That's what we build.</h2>
+      <p>No year-long "transformation" projects and no buzzwords. We find something specific that costs you time or money, fix it, prove that it works, and then move on to the next one.</p>
     </div>
   </section>
 
   <section id="process">
     <div class="wrap">
       <div class="sec-head">
-        <span class="lbl">// process</span>
+        <span class="lbl">// how it works</span>
         <h2>Small pilots. Fast proof. Then scale.</h2>
-        <p>We don't sell year-long AI transformations. We find the sharpest use case, prove it in weeks, and expand from evidence.</p>
+        <p>You see working software early, on your real data, before you commit to the full build.</p>
       </div>
       <div class="proc-grid">
         <div class="proc">
           <span class="ph">01 — DISCOVER</span>
-          <h3>Find the right problem</h3>
-          <p>A short discovery pass over your workflows and data to identify where AI or automation actually pays — and where it doesn't.</p>
+          <h3>Talk it through</h3>
+          <span class="when">Week 1</span>
+          <p>It starts with a free 30-minute workflow review. We learn how the work gets done today, which systems are involved, and what "done" looks like for you.</p>
+          <div class="get"><b>You get</b>A clear plan and scope for what we'll build.</div>
         </div>
         <div class="proc">
-          <span class="ph">02 — PROVE</span>
-          <h3>Pilot in weeks</h3>
-          <p>A working pilot on your real data with defined success criteria. You see it work — or we tell you honestly why it won't.</p>
+          <span class="ph">02 — DEMO</span>
+          <h3>See it working</h3>
+          <span class="when">~2 weeks for most projects</span>
+          <p>We build a working demo so you can see it handle your actual process, not a slideshow.</p>
+          <div class="get"><b>You get</b>A hands-on demo and an honest read on fit.</div>
         </div>
         <div class="proc">
-          <span class="ph">03 — SHIP &amp; SCALE</span>
-          <h3>Production, then expansion</h3>
-          <p>Hardening, security review, integration, and rollout — then extending what works to the next workflow, with documentation at every step.</p>
+          <span class="ph">03 — BUILD</span>
+          <h3>Make it production-ready</h3>
+          <span class="when">Depends on scope</span>
+          <p>We harden it, secure it, connect it to your live systems, and roll it out to your team.</p>
+          <div class="get"><b>You get</b>A live system, documentation, and training.</div>
         </div>
+        <div class="proc">
+          <span class="ph">04 — SCALE</span>
+          <h3>Support &amp; expand</h3>
+          <span class="when">Ongoing</span>
+          <p>We keep it running as your business changes, then apply what works to the next process.</p>
+          <div class="get"><b>You get</b>A partner who knows your systems.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="lbl">// faq</span>
+        <h2>Common questions.</h2>
+        <p>Don't see yours? Call or email us. We're happy to talk it through, with no pressure.</p>
+      </div>
+      <div>
+        <details class="qa" open>
+          <summary>What kinds of businesses do you work with?</summary>
+          <p>All kinds. We aren't tied to one industry. Our clients range from small teams to larger organizations, and what they share is repetitive work that eats up their people's time. If that sounds like you, we should talk.</p>
+        </details>
+        <details class="qa">
+          <summary>What happens in the free workflow review?</summary>
+          <p>It's a 30-minute call or screen share. You walk us through a process that eats your team's time, and we ask questions. Then we tell you honestly whether AI or automation can take it over, and roughly what it would take. There's no cost and no obligation, and you'll come away with useful ideas either way.</p>
+        </details>
+        <details class="qa">
+          <summary>How quickly can we see something?</summary>
+          <p>For most projects, we can map out the solution and show you a working demo within about two weeks. Full rollout depends on the size of the project, and we'll give you a realistic timeline up front.</p>
+        </details>
+        <details class="qa">
+          <summary>How much does a project cost?</summary>
+          <p>It depends on scope. A single automation is very different from a full custom platform. After a short conversation, we'll give you a clear quote for what we'd build.</p>
+        </details>
+        <details class="qa">
+          <summary>Do you work with QuickBooks and the tools we already use?</summary>
+          <p>Yes. We build QuickBooks integrations regularly, and we work with Microsoft 365, SharePoint, CRMs, and most systems that have an API or a web interface. We work with what you already have and don't make you switch.</p>
+        </details>
+        <details class="qa">
+          <summary>Is our data safe?</summary>
+          <p>Security is part of the design from day one. C7 Intelligence is part of Cyber7 Group, which also provides managed IT and cybersecurity. Before anything is built, we'll walk you through where your data goes, who can access it, and how it's protected.</p>
+        </details>
+        <details class="qa">
+          <summary>Are you local? Do you work remotely?</summary>
+          <p>Both. Many of our clients are in the Charlotte area, and we work with businesses across the country. Most projects run smoothly with remote meetings and screen shares.</p>
+        </details>
+        <details class="qa">
+          <summary>What if AI isn't the right fit for our problem?</summary>
+          <p>Then we'll tell you. Sometimes the better answer is a simple automation, a software fix, or a process change. We'd rather give you the honest answer than sell you something that won't work.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -329,35 +648,38 @@
     <div class="wrap">
       <div class="inner">
         <div>
-          <h2>Have a workflow AI should be doing?</h2>
-          <p>Tell us what eats your team's hours. We'll tell you — honestly — whether AI can take it over, and prove it with a pilot.</p>
+          <h2>Get a free 30-minute workflow review.</h2>
+          <p>Tell us what's eating your team's week. We'll walk through it with you and tell you honestly whether AI or automation can take it over, and what it would take. No cost, no obligation.</p>
+          <div class="note"><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Serving Charlotte and clients nationwide</div>
         </div>
         <div class="actions">
-          <a href="mailto:info@c7intelligence.io" class="btn btn-white">info@c7intelligence.io</a>
-          <a href="tel:5024735020" class="btn btn-ghostw">502-473-5020</a>
+          <a href="mailto:info@c7intelligence.io?subject=Free%20workflow%20review" class="btn btn-white">info@c7intelligence.io</a>
+          <a href="tel:+15024735020" class="btn btn-ghostw">502-473-5020</a>
         </div>
       </div>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="wrap">
       <div>
-        <div class="fbrand">C7 Intelligence</div>
-        <div style="font-size:13px;max-width:270px;line-height:1.6;">AI integration &amp; custom software development.<br>A Cyber7 Group company.</div>
+        <div class="fbrand"><img src="assets/c7-shield.png" alt="">C7 Intelligence</div>
+        <div style="font-size:13px;max-width:290px;line-height:1.6;">AI automation, integrations &amp; custom software development. Charlotte &amp; nationwide.<br>A Cyber7 Group company.</div>
       </div>
       <div class="fcol">
         <h4>Site</h4>
-        <a href="#services">What We Build</a>
-        <a href="#philosophy">Philosophy</a>
-        <a href="#process">Process</a>
+        <a href="#examples">What We've Built</a>
+        <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
+        <a href="#faq">FAQ</a>
       </div>
       <div class="fcol">
         <h4>Contact</h4>
-        <a href="tel:5024735020">502-473-5020</a>
+        <a href="tel:+15024735020">502-473-5020</a>
         <a href="mailto:info@c7intelligence.io">info@c7intelligence.io</a>
       </div>
-      <div class="fcol" style="font-size:12.5px;color:#a49eb2;">
+      <div class="fcol" style="font-size:12.5px;color:#8d87a0;">
         © 2026 C7 Intelligence,<br>a Cyber7 Group LLC company.
       </div>
     </div>
