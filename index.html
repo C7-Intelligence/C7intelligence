@@ -156,15 +156,36 @@
   }
   .term .bar span{width:11px;height:11px;border-radius:50%;background:#3d3a4a;}
   .term .bar .t{margin-left:8px;color:#8d87a0;font-size:11.5px;}
-  .term .body{padding:22px 22px 26px;line-height:1.85;color:#c9c4d6;}
+  .term .bar .live{margin-left:auto;display:flex;align-items:center;gap:6px;color:#4ade80;font-size:11px;}
+  .term .bar .live::before{content:"";width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 3px rgba(74,222,128,0.18);}
+  .term .body{padding:22px 22px 24px;line-height:1.7;color:#c9c4d6;}
   .term .c{color:#7d778f;}
   .term .v{color:#a78bfa;}
-  .term .m{color:#e879f9;}
-  .term .g{color:#4ade80;}
-  .term .y{color:#fbbf24;}
+  .term .ask{display:flex;gap:10px;align-items:baseline;margin-bottom:18px;}
+  .term .who{color:#7d778f;flex-shrink:0;}
+  .term .typed{
+    display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;color:#fff;
+    width:0;animation:type 1.5s steps(30) .5s forwards;
+  }
+  @keyframes type{to{width:30ch;}}
+  .term .reply{border-left:2px solid transparent;padding-left:14px;animation:rule .4s ease 2.2s forwards;}
+  @keyframes rule{to{border-left-color:rgba(139,92,246,0.45);}}
+  .term .ln{display:grid;grid-template-columns:18px 1fr;gap:8px;margin-bottom:7px;opacity:0;transform:translateY(4px);animation:rise .45s ease forwards;animation-delay:var(--d);}
+  @keyframes rise{to{opacity:1;transform:none;}}
+  .term .ok{color:#4ade80;}
+  .term .warn{color:#fbbf24;}
+  .term .ln b{color:#fff;font-weight:500;}
+  .term .saved{
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+    margin:16px 0 14px;padding:12px 14px;border-radius:10px;
+    background:linear-gradient(94deg,rgba(109,40,217,0.28),rgba(217,70,239,0.18));border:1px solid rgba(167,139,250,0.3);
+  }
+  .term .saved span{color:#c9c4d6;}
+  .term .saved b{font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:#fff;white-space:nowrap;}
+  .term .next{color:#a78bfa;}
   .cursor{display:inline-block;width:8px;height:15px;background:#8b5cf6;vertical-align:middle;animation:blink 1.1s steps(1) infinite;}
   @keyframes blink{50%{opacity:0;}}
-  @media (max-width:640px){.term{font-size:11.5px;}.term .body{padding:18px 16px 20px;line-height:1.75;}}
+  @media (max-width:640px){.term{font-size:11.5px;}.term .body{padding:18px 16px 20px;}.term .saved b{font-size:19px;}}
 
   /* trust strip */
   .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;}
@@ -331,6 +352,9 @@
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto;}
     *{transition:none !important;animation:none !important;}
+    .term .ln{opacity:1;transform:none;}
+    .term .typed{width:auto;}
+    .term .reply{border-left-color:rgba(139,92,246,0.45);}
   }
 </style>
 </head>
@@ -382,20 +406,20 @@
           <span><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>Security built in</span>
         </div>
       </div>
-      <div class="term" role="img" aria-label="Example: an automated accounts payable run that reads 38 invoices, posts 35 to QuickBooks, and flags 3 for human review">
-        <div class="bar"><span></span><span></span><span></span><div class="t">c7 — ap-automation.run</div></div>
+      <div class="term" role="img" aria-label="Example: a business owner asks what needs their attention today. The assistant reports 35 invoices entered in QuickBooks overnight, 12 payment reminders sent with $18,400 collected, 2 new leads followed up in the CRM, 3 bills flagged for review, and 14.5 hours saved this week.">
+        <div class="bar"><span></span><span></span><span></span><div class="t">c7 assistant · example</div><div class="live">live</div></div>
         <div class="body" aria-hidden="true">
-<span class="c"># Overnight: invoices in, bills posted</span><br>
-<span class="v">&gt;</span> ap.run(inbox=<span class="g">"invoices@yourco.com"</span>)<br>
-<br>
-<span class="m">→ read:</span> 38 invoices (PDF, email, scans)<br>
-<span class="m">→ matched:</span> vendor · PO · GL account<br>
-<span class="m">→ posted:</span> <span class="g">35 bills to QuickBooks ✓</span><br>
-<br>
-<span class="c"># Only the exceptions need a person</span><br>
-<span class="v">&gt;</span> <span class="y">3 flagged for review:</span><br>
-&nbsp;&nbsp;INV-2231 total $4,812 ≠ PO $4,120<br>
-&nbsp;&nbsp;<span class="c">+ 2 new vendors awaiting approval</span> <span class="cursor"></span>
+          <div class="ask"><span class="who">you ›</span><span class="typed">What needs my attention today?</span></div>
+          <div class="reply">
+            <div class="ln" style="--d:2.3s"><span class="ok">✓</span><span><b>35 invoices</b> entered in QuickBooks overnight</span></div>
+            <div class="ln" style="--d:2.8s"><span class="ok">✓</span><span><b>12 payment reminders</b> sent · $18,400 collected</span></div>
+            <div class="ln" style="--d:3.3s"><span class="ok">✓</span><span><b>2 new leads</b> added to the CRM and followed up</span></div>
+            <div class="ln" style="--d:3.8s"><span class="warn">!</span><span><b>3 bills</b> need a look: amounts don't match the PO</span></div>
+            <div class="ln" style="--d:4.4s;display:block;margin:0;">
+              <div class="saved"><span>Time saved this week</span><b>14.5 hrs</b></div>
+            </div>
+            <div class="ln" style="--d:5s;display:block;margin:0;"><span class="next">Want me to pull up those 3 bills?</span> <span class="cursor"></span></div>
+          </div>
         </div>
       </div>
     </div>

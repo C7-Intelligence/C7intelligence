@@ -45,7 +45,7 @@ assets/
 ## Page Sections (in order)
 
 1. Header/nav (sticky, blurred) — shield + "C7 Intelligence", links, Start a Project button; below 960px a `<details>` hamburger menu (links close it via a one-line inline onclick)
-2. Hero — "AI that actually ships." + plain-English lead (any size/industry, demo in ~2 weeks) + fact row + terminal card showing an AP automation run posting bills to QuickBooks
+2. Hero — "AI that actually ships." + plain-English lead (any size/industry, demo in ~2 weeks) + fact row + animated "assistant" card: owner asks "What needs my attention today?" and gets a plain-English morning summary (QuickBooks invoices, AR reminders, CRM leads, flagged bills, hours saved). CSS-only animation; reduced-motion shows the final state
 3. Trust strip — 4 items: demo in ~2 weeks, security (Cyber7 Group), works with your tools, Charlotte & nationwide
 4. What We've Built (`#examples`) — 5 real project types (AP automation, AR automation, QuickBooks integrations, dashboards & reporting, CRM build-outs) + dark "Something else entirely?" card
 5. Services (`#services`) — 6 cards, each with icon, plain-English description, a "For example:" box, and tech tag pills
