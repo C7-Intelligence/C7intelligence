@@ -1,0 +1,23 @@
+# C7 Intelligence
+> C7 Intelligence is the AI and custom software company in Cyber7 Group. It builds automations and applications that run in production.
+
+C7 Intelligence connects AI to business systems, builds company knowledge assistants, ships custom software and dashboards, and automates repetitive work. It also does AI readiness and advisory. The site says security is built with the Cyber7 managed IT and cybersecurity teams.
+
+## How an engagement starts
+- Free 30-minute workflow review.
+- A working demo in about two weeks.
+- Path on the site: Discover, Demo, Build, Scale.
+- Remote meetings and screen shares. Clients nationwide.
+
+## Tools named on the site
+- Azure AI Foundry, OpenAI, Claude, Azure AI Search, SharePoint, Microsoft 365, QuickBooks, Power Automate.
+
+## Parent
+- Cyber7 Group: https://cyber7group.com/
+- Phone: 502-473-5020
+
+## Pages
+- https://c7intelligence.io/
+- https://c7intelligence.io/ai-integration.html
+- https://c7intelligence.io/workflow-automation.html
+- https://c7intelligence.io/knowledge-assistants.html
