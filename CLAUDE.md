@@ -34,28 +34,24 @@ assets/
 
 ## Design System (distinct from siblings)
 
-- **Fonts:** Fraunces (serif display headings), Manrope (body/UI), Fira Code (mono labels/terminal)
-- **Palette (CSS variables in `:root`):**
-  - `--paper` #faf9f6, `--paper-2` #f1efe9 — warm light backgrounds (site is LIGHT overall)
-  - `--carbon` #191722, `--carbon-2` #221f2e — near-black (terminal card, belief band, buttons)
-  - `--violet` #6d28d9, `--violet-bright` #8b5cf6, `--magenta` #d946ef — gradient accent pair
-  - `--text` #26232f, `--muted` #6b6579
-- **Feel:** warm editorial light theme + violet→magenta gradients; serif display type; pill/rounded shapes (100px radius buttons, 16px card radii — softest of the three sites); radial gradient glows; a fake terminal card in the hero demoing a RAG query with citations; "// label" mono section markers.
+- **Fonts:** Fraunces (serif display headings), Manrope (body/UI). Fira Code was dropped in the 2026-11 redesign.
+- **Palette (CSS variables in `:root`):** `--bg` #fbfaf7 / `--bg-2` #f3f1ec (warm light backgrounds), `--ink` #1a1822, `--accent` #5b2bd1 (single violet accent, used sparingly), `--line` #e6e2da, `--dark` #1a1822 for the assistant card and contact panel.
+- **Feel (2026-11 redesign):** quiet, editorial, light. One accent color, no gradients, no gradient text, no mono/uppercase "// labels", no italic accents, no pill buttons (10px radius). Owner asked for the site not to look AI-generated; keep it that way.
 
 ## Page Sections (in order)
 
-1. Header/nav (sticky, blurred) — shield + "C7 Intelligence", links, Start a Project button; below 960px a `<details>` hamburger menu (links close it via a one-line inline onclick)
-2. Hero — headline "Your team's busywork, handled." ("AI that actually ships" kept as the pill tagline) + plain-English lead (any size/industry, demo in ~2 weeks) + fact row + animated "assistant" card: owner asks "What needs my attention today?" and gets a plain-English morning summary (QuickBooks invoices, AR reminders, CRM leads, flagged bills, and a before/after panel: "2 days of data entry" → "Done by 7am"). CSS-only animation; reduced-motion shows the final state
-3. Trust strip — 4 items: demo in ~2 weeks, security (Cyber7 Group), works with your tools, nationwide
-4. What We've Built (`#examples`) — 5 real project types (AP automation, AR automation, QuickBooks integrations, dashboards & reporting, CRM build-outs) + dark "Something else entirely?" card
-5. Services (`#services`) — 6 cards, each with icon, plain-English description, a "For example:" box, and tech tag pills
-6. Our approach (`#philosophy`) — dark band, large statement + short supporting paragraph
-7. How It Works (`#process`) — 4 steps: Discover (week 1) → Demo (~2 weeks) → Build (depends on scope) → Scale (ongoing), each with a "You get" line
-8. FAQ (`#faq`) — `<details>` accordion: who we work with, speed, cost, tools, data safety, location, "what if AI isn't the fit"
-9. CTA (`#contact`) — violet→magenta gradient panel, email + phone buttons, "Serving clients nationwide"
-10. Footer — brand + "A Cyber7 Group company", site links, contact. No LinkedIn, no sibling cross-links (consistent with owner's choice on the Infrastructure site).
+1. Header/nav (sticky, blurred) — shield + "C7 Intelligence", links (What we do / How it works / Why C7 / FAQ), "Get a free review" button; below 900px a `<details>` hamburger menu
+2. Hero — "Your team's busywork, handled." + two-sentence lead + primary/secondary buttons + three check-mark facts (free review, demo in ~2 weeks, nationwide). Right: dark "C7 assistant · example" card styled as a chat (question bubble, four result rows that fade in, before/after panel: 2 days of data entry → done by 7am). CSS-only animation; reduced-motion shows the final state.
+3. What we can do for you (`#offers`) — 8 cards in a 4-column grid: AP, AR, QuickBooks & system integrations, dashboards & reporting, company handbook assistant, Microsoft 365 assistant, quotes/proposals/emails, CRM build-outs. Footer line points custom-software requests to #contact.
+4. How it works (`#how`) — 3 numbered steps: free review (30 min) → working demo (~2 weeks) → build and support (scope-dependent)
+5. Why work with us (`#why`) — 3 columns: security built in (Cyber7 Group), works with what you have, straight answers
+6. FAQ (`#faq`) — 5 `<details>` questions, first open by default
+7. Contact (`#contact`) — dark panel: email button (subject pre-filled "Free workflow review"), phone, Louisville office address
+8. Footer — brand + "A Cyber7 Group company", site links, contact + address. No LinkedIn, no sibling cross-links.
 
-SEO: meta description, canonical, Open Graph/Twitter tags, and ProfessionalService JSON-LD in `<head>` — keep them in sync with copy/contact changes.
+Also in the repo (added 2026-10-08, separate dark Georgia styling, aimed at AI crawlers): `ai-integration.html`, `knowledge-assistants.html`, `workflow-automation.html`, `llms.txt`, `robots.txt`, `sitemap.xml`. Leave them as they are unless asked.
+
+SEO: meta description, canonical, Open Graph/Twitter tags, and ProfessionalService JSON-LD (with the Louisville address) in `<head>` — keep them in sync with copy/contact changes.
 
 ## Key Content Facts
 
