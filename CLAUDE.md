@@ -10,7 +10,7 @@ Corporate presence website for **C7 Intelligence**, the AI integration & custom 
 | C7 Infrastructure | Data center / systems integration | c7infrastructure.io |
 | C7 Intelligence | AI integration / custom software dev | c7intelligence.io (this repo) |
 
-The three DBA sites are intentionally **visually distinct**. This site must NOT drift toward the MSP look (dark ops-center, amber/teal, Space Grotesk) or the Infrastructure look (deep-blue enterprise, Sora/JetBrains Mono, blueprint).
+The three DBA sites are intentionally **visually distinct**. This site must NOT drift toward the MSP look (dark ops-center, amber/teal, Space Grotesk) or the Infrastructure look (deep-blue enterprise, Sora/JetBrains Mono, blueprint). It stays distinct through its light, editorial layout and serif headings; the red accent is shared with the parent logo on purpose.
 
 **Positioning:** pragmatic, anti-hype AI. "AI that actually ships." Small pilots, fast proof, production-grade. Honest about what AI can't do.
 
@@ -35,8 +35,8 @@ assets/
 ## Design System (distinct from siblings)
 
 - **Fonts:** Fraunces (serif display headings), Manrope (body/UI). Fira Code was dropped in the 2026-11 redesign.
-- **Palette (CSS variables in `:root`):** `--bg` #fbfaf7 / `--bg-2` #f3f1ec (warm light backgrounds), `--ink` #1a1822, `--accent` #5b2bd1 (single violet accent, used sparingly), `--line` #e6e2da, `--dark` #1a1822 for the assistant card and contact panel.
-- **Feel (2026-11 redesign):** quiet, editorial, light. One accent color, no gradients, no gradient text, no mono/uppercase "// labels", no italic accents, no pill buttons (10px radius). Owner asked for the site not to look AI-generated; keep it that way.
+- **Palette (CSS variables in `:root`), taken from the Cyber7 shield logo:** `--accent` #bf3f2f brick red (logo red is #c04030; hover `--accent-ink` #962f23), silver-grey neutrals (`--bg` #fafaf9, `--bg-2` #f1f1ef, `--line` #e1e1de, `--muted` #73737a), near-black `--ink` #1c1c1e, charcoal `--dark` #1e1e21 for the assistant card and contact panel. **No purple/violet anywhere** — the owner replaced it on 2026-11-05 because it looked AI-generated and did not match the logo.
+- **Feel (2026-11 redesign):** quiet, editorial, light. One accent color (the logo red), no gradients, no gradient text, no mono/uppercase "// labels", no italic accents, no pill buttons (10px radius). Owner asked for the site not to look AI-generated; keep it that way.
 
 ## Page Sections (in order)
 
