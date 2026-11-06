@@ -34,9 +34,9 @@ assets/
 
 ## Design System (distinct from siblings)
 
-- **Fonts:** Fraunces (serif display headings), Manrope (body/UI). Fira Code was dropped in the 2026-11 redesign.
+- **Fonts:** Archivo (headings, buttons, labels; wide `font-stretch:110%` on h1/h2 to echo the CYBER7GROUP wordmark), IBM Plex Sans (body). Fraunces/Manrope/Fira Code were dropped on 2026-11-05 because the serif-display look read as AI-generated.
 - **Palette (CSS variables in `:root`), taken from the Cyber7 shield logo:** `--accent` #bf3f2f brick red (logo red is #c04030; hover `--accent-ink` #962f23), silver-grey neutrals (`--bg` #fafaf9, `--bg-2` #f1f1ef, `--line` #e1e1de, `--muted` #73737a), near-black `--ink` #1c1c1e, charcoal `--dark` #1e1e21 for the assistant card and contact panel. **No purple/violet anywhere** — the owner replaced it on 2026-11-05 because it looked AI-generated and did not match the logo.
-- **Feel (2026-11 redesign):** quiet, editorial, light. One accent color (the logo red), no gradients, no gradient text, no mono/uppercase "// labels", no italic accents, no pill buttons (10px radius). Owner asked for the site not to look AI-generated; keep it that way.
+- **Feel (2026-11 redesign):** plain, sharp, corporate. White background, one accent (the logo red), thin rules instead of boxed cards, 3–4px corners, a 3px red bar on the header, a short red rule above each h2, the parent Cyber7 Group logo in the footer. No gradients, no serif display type, no icon tiles, no check-mark rows, no "// labels", no pill buttons. Owner asked for the site not to look AI-generated; keep it that way.
 
 ## Page Sections (in order)
 
