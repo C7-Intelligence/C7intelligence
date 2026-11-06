@@ -10,7 +10,7 @@ Corporate presence website for **C7 Intelligence**, the AI integration & custom 
 | C7 Infrastructure | Data center / systems integration | c7infrastructure.io |
 | C7 Intelligence | AI integration / custom software dev | c7intelligence.io (this repo) |
 
-The three DBA sites are intentionally **visually distinct**. This site must NOT drift toward the MSP look (dark ops-center, amber/teal, Space Grotesk) or the Infrastructure look (deep-blue enterprise, Sora/JetBrains Mono, blueprint).
+The three DBA sites are intentionally **visually distinct**. This site must NOT drift toward the MSP look (dark ops-center, amber/teal, Space Grotesk) or the Infrastructure look (deep-blue enterprise, Sora/JetBrains Mono, blueprint). It stays distinct through its light, editorial layout and serif headings; the red accent is shared with the parent logo on purpose.
 
 **Positioning:** pragmatic, anti-hype AI. "AI that actually ships." Small pilots, fast proof, production-grade. Honest about what AI can't do.
 
@@ -34,28 +34,24 @@ assets/
 
 ## Design System (distinct from siblings)
 
-- **Fonts:** Fraunces (serif display headings), Manrope (body/UI), Fira Code (mono labels/terminal)
-- **Palette (CSS variables in `:root`):**
-  - `--paper` #faf9f6, `--paper-2` #f1efe9 — warm light backgrounds (site is LIGHT overall)
-  - `--carbon` #191722, `--carbon-2` #221f2e — near-black (terminal card, belief band, buttons)
-  - `--violet` #6d28d9, `--violet-bright` #8b5cf6, `--magenta` #d946ef — gradient accent pair
-  - `--text` #26232f, `--muted` #6b6579
-- **Feel:** warm editorial light theme + violet→magenta gradients; serif display type; pill/rounded shapes (100px radius buttons, 16px card radii — softest of the three sites); radial gradient glows; a fake terminal card in the hero demoing a RAG query with citations; "// label" mono section markers.
+- **Fonts:** Archivo (headings, buttons, labels; wide `font-stretch:110%` on h1/h2 to echo the CYBER7GROUP wordmark), IBM Plex Sans (body). Fraunces/Manrope/Fira Code were dropped on 2026-11-05 because the serif-display look read as AI-generated.
+- **Palette (CSS variables in `:root`), taken from the Cyber7 shield logo:** `--accent` #bf3f2f brick red (logo red is #c04030; hover `--accent-ink` #962f23), silver-grey neutrals (`--bg` #fafaf9, `--bg-2` #f1f1ef, `--line` #e1e1de, `--muted` #73737a), near-black `--ink` #1c1c1e, charcoal `--dark` #1e1e21 for the assistant card and contact panel. **No purple/violet anywhere** — the owner replaced it on 2026-11-05 because it looked AI-generated and did not match the logo.
+- **Feel (2026-11 redesign):** plain, sharp, corporate. White background, one accent (the logo red), thin rules instead of boxed cards, 3–4px corners, a 3px red bar on the header, a short red rule above each h2, the parent Cyber7 Group logo in the footer. No gradients, no serif display type, no icon tiles, no check-mark rows, no "// labels", no pill buttons. Owner asked for the site not to look AI-generated; keep it that way.
 
 ## Page Sections (in order)
 
-1. Header/nav (sticky, blurred) — shield + "C7 Intelligence", links, Start a Project button; below 960px a `<details>` hamburger menu (links close it via a one-line inline onclick)
-2. Hero — headline "Your team's busywork, handled." ("AI that actually ships" kept as the pill tagline) + plain-English lead (any size/industry, demo in ~2 weeks) + fact row + animated "assistant" card: owner asks "What needs my attention today?" and gets a plain-English morning summary (QuickBooks invoices, AR reminders, CRM leads, flagged bills, and a before/after panel: "2 days of data entry" → "Done by 7am"). CSS-only animation; reduced-motion shows the final state
-3. Trust strip — 4 items: demo in ~2 weeks, security (Cyber7 Group), works with your tools, nationwide
-4. What We've Built (`#examples`) — 5 real project types (AP automation, AR automation, QuickBooks integrations, dashboards & reporting, CRM build-outs) + dark "Something else entirely?" card
-5. Services (`#services`) — 6 cards, each with icon, plain-English description, a "For example:" box, and tech tag pills
-6. Our approach (`#philosophy`) — dark band, large statement + short supporting paragraph
-7. How It Works (`#process`) — 4 steps: Discover (week 1) → Demo (~2 weeks) → Build (depends on scope) → Scale (ongoing), each with a "You get" line
-8. FAQ (`#faq`) — `<details>` accordion: who we work with, speed, cost, tools, data safety, location, "what if AI isn't the fit"
-9. CTA (`#contact`) — violet→magenta gradient panel, email + phone buttons, "Serving clients nationwide"
-10. Footer — brand + "A Cyber7 Group company", site links, contact. No LinkedIn, no sibling cross-links (consistent with owner's choice on the Infrastructure site).
+1. Header/nav (sticky, blurred) — shield + "C7 Intelligence", links (What we do / How it works / Why C7 / FAQ), "Get a free review" button; below 900px a `<details>` hamburger menu
+2. Hero — "Your team's busywork, handled." + two-sentence lead + primary/secondary buttons + three check-mark facts (free review, demo in ~2 weeks, nationwide). Right: dark "C7 assistant · example" card styled as a chat (question bubble, four result rows that fade in, before/after panel: 2 days of data entry → done by 7am). CSS-only animation; reduced-motion shows the final state.
+3. What we can do for you (`#offers`) — 8 cards in a 4-column grid: AP, AR, QuickBooks & system integrations, dashboards & reporting, company handbook assistant, Microsoft 365 assistant, quotes/proposals/emails, CRM build-outs. Footer line points custom-software requests to #contact.
+4. How it works (`#how`) — 3 numbered steps: free review (30 min) → working demo (~2 weeks) → build and support (scope-dependent)
+5. Why work with us (`#why`) — 3 columns: security built in (Cyber7 Group), works with what you have, straight answers
+6. FAQ (`#faq`) — 5 `<details>` questions, first open by default
+7. Contact (`#contact`) — dark panel: email button (subject pre-filled "Free workflow review"), phone, Louisville office address
+8. Footer — brand + "A Cyber7 Group company", site links, contact + address. No LinkedIn, no sibling cross-links.
 
-SEO: meta description, canonical, Open Graph/Twitter tags, and ProfessionalService JSON-LD in `<head>` — keep them in sync with copy/contact changes.
+Also in the repo (added 2026-10-08, separate dark Georgia styling, aimed at AI crawlers): `ai-integration.html`, `knowledge-assistants.html`, `workflow-automation.html`, `llms.txt`, `robots.txt`, `sitemap.xml`. Leave them as they are unless asked.
+
+SEO: meta description, canonical, Open Graph/Twitter tags, and ProfessionalService JSON-LD (with the Louisville address) in `<head>` — keep them in sync with copy/contact changes.
 
 ## Key Content Facts
 
